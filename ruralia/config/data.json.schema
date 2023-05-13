@@ -1,0 +1,51 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "village",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The village's name."
+    },
+    "county": {
+      "type": "string",
+      "description": "The county's name."
+    },
+    "location": {
+      "type": "object"
+      "description": "The geographic location of the village."
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "The geographic latitude of the village."
+        },
+        "longitude": {
+          "type": "number",
+          "description": "The geographic longitude of the village."
+        }
+      }
+    },
+    "population": {
+      "description": "The population of the village, in persons.",
+      "type": "integer",
+      "minimum": 0
+    }
+    "utilities": {
+      "type": "array",
+      "description": "The utilities available in the village.",
+      "items": {
+        "type": "string",
+        "enum": ["electricity", "water", "sewer", "gas", "internet"]
+      }
+    },
+    facilities: {
+      "type": "array",
+      "description": "The facilities available in the village.",
+      "items" {
+        "type": "string",
+        "enum": ["hospital", "school", "library", "park", "shopping"]
+      }
+    }
+  }
+}
