@@ -1,0 +1,40 @@
+{
+    "villages": [
+            {
+            "id": "1",
+            "name": "charlottenburg",
+            "county": "timis",
+            "location": {
+                "latitude": 45.9792905,
+                "longitude": 21.5163588
+            },
+            "population": 135,
+            "utilities": ["water", "gas", "electricity"],
+            "facilities": ["school", "park"]
+            },
+            {
+                "id": "2",
+                "name": "Herneacova",
+                "county": "timis",
+                "location": {
+                    "latitude": 45.8581,
+                    "longitude": 21.5161
+                },
+                "population": 472,
+                "utilities": ["water", "gas", "electricity"],
+                "facilities": ["school", "park"]
+            },
+            {
+                "id": "3",
+                "name": "remetea mare",
+                "county": "timis",
+                "location": {
+                    "latitude": 45.7833,
+                    "longitude": 21.3833
+                },
+                "population": 1124,
+                "utilities": ["electricity", "water", "sewer", "gas", "internet"],
+                "facilities": ["hospital", "school", "library", "park", "shopping"]
+            }
+        ]
+}
