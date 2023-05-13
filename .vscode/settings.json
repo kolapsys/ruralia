@@ -1,0 +1,42 @@
+{
+    "editor.renderWhitespace": "all",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/**/*.json"
+            ],
+            "url": "./config/data.json.schema"
+        }
+    ],
+    "json.maxItemsComputed": 50000,
+    "files.eol": "\n",
+    "git.untrackedChanges": "separate",
+    "git.ignoreLimitWarning": true,
+    "extensions.ignoreRecommendations": true,
+    "files.trimFinalNewlines": true,
+    "json.format.enable": false,
+    "files.insertFinalNewline": true,
+    "diffEditor.codeLens": true,
+    "editor.formatOnSaveMode": "modifications",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "search.searchEditor.defaultNumberOfContextLines": 5,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": false,
+    "gitlens.plusFeatures.enabled": false,
+    "editor.minimap.enabled": false,
+    "gitlens.views.contributors.avatars": false,
+    "scm.alwaysShowActions": true,
+    "editor.fontFamily": "'Fira Code Medium'",
+    "terminal.integrated.scrollback": 5000,
+    "git.autorefresh": true,
+    "explorer.confirmDelete": false,
+    "editor.foldingMaximumRegions": 65000,
+    "terminal.integrated.customGlyphs": false,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.minimumContrastRatio": 1,
+    "git.mergeEditor": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true
+}
