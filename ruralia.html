@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Map</title>    
+    <script>
+      function initMap() {
+        // Initialize the map
+        var myLatLng = {lat: 45.7606, lng: 21.2267};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'My Marker',
+          label: 'bla'
+        });
+        var infowindow = new google.maps.InfoWindow({
+                content: "informatii relevante 1"
+        });
+        infowindow.setContent("<p>" + "informatii relevante 2" + "<br />" + 
+                  "info 3" + "<br />" + 
+                  "info 4" + "</p>");
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+      }
+      
+    </script>
+    <style>
+      #map {
+        height: 400px;
+        width: 600px;
+      }
+      html, body {
+        height: 70%;
+        width: 70%;
+        margin: 1;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Ruralia</div>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJSNNft64LqHp5_OOzxQa3m87SXl0N2g&callback=initMap"></script>
+  </body>                                                                
+</html>
